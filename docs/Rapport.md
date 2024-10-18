@@ -81,7 +81,7 @@ Durant la première partie de cette quatrième séance, nous avons dû retourner
 Pour réalisé cela nous avons dû reprendre la classe Cemaphore du TP2 et créer une classe CemaphoreGen pour permettre de sécurisé la section critique qui est la zone ou un certains nombre de mobile à le droit de passé en même temps. <br>
 Voici la classe CemaphoreGen :
 
-<img src="images/ClasseCemaphoreGen.jpg" width="350" height="195" alt="diagramme de classe UML représentant le code du TP2 sur lequel nous devions travailler durant la séance 3">
+<img src="images/classeCemaphoreGen.jpg" width="350" height="195" alt="diagramme de classe UML représentant le code du TP2 sur lequel nous devions travailler durant la séance 3">
 <br>
 Après avoir récupérer la classe Cemaphore et créer la classe CemaphoreGen, nous avons dû modifier la méthode run de la classe UnMobile en mettant 6 boucles différentes en ayant 3 pour l'allée et 3 pour le retour avec la deuxième boucle pour l'aller et pour le retour qu'on délimite avec le semaphore pour bloquer le nombre de mobile.<br>
 En deuxième partie de séance nous avons commencer le cours et le TP3 sur les moniteurs. Dans ce TP nous devons réalisé une boite au lettre c'est-à-dire qu'il y a une classe BAL, une classe Facteur et une classe Habitant, le Facteur peut mettre un lettre dans la BAL si elle est vide et l'habitant peut récupérer la lettre dans la bal si elle n'est pas vide.<br>
@@ -91,7 +91,7 @@ Pour réalisé cela j'ai dû faire une classe BAL, voici ce qu'il y a dedans :
 
 J'ai ensuite du réaliser une classe Facteur pour mettre une lettre dans la classe BAL, voici comment j'ai réalisé cela : 
 
-<img src="images/ClasseFacteur.jpg" width="400" height="327" alt="diagramme de classe UML représentant le code du TP2 sur lequel nous devions travailler durant la séance 3">
+<img src="images/ClasseFacteur.JPG" width="400" height="327" alt="diagramme de classe UML représentant le code du TP2 sur lequel nous devions travailler durant la séance 3">
 
 Pour finir, j'ai dû réaliser une classe Habitant pour récupérer la lettre mise dans la classe BAL, voici comment j'ai réalisé cela : 
 
