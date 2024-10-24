@@ -1,6 +1,7 @@
 public class BAL {
     
     private String lettre;
+    private boolean availaible = false;
 
     public BAL() {
 
@@ -8,27 +9,29 @@ public class BAL {
 
     public synchronized void deposer(String lettreADeposer){
         try{
-            while (lettre != null){
+            while (this.availaible == true){
                 wait();
             }
             lettre = lettreADeposer;
-            System.out.println("Le facteur a déposer une lettre\n");
+            System.out.println("Le facteur a déposer une lettre");
+            availaible = true;
             notify();
         }catch(InterruptedException e){
 
         }
     }
 
-    public synchronized void retirer(){
+    public synchronized String retirer(){
         try{
-            while (lettre == null){
+            while (this.availaible == false){
                 wait();
             }
-            System.out.println("La lettre contient : " + lettre + "\n\n");
-            lettre = null;
+            System.out.println("La lettre contient : " + lettre + "\n");
+            availaible = false;
             notify();
         }catch(InterruptedException e){
 
         }
+        return lettre;
     }
 }

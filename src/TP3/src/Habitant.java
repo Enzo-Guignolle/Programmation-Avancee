@@ -9,10 +9,15 @@ public class Habitant extends Thread{
     public void run(){
         try {
             while (true){
-                bal.retirer();
+                String lettre = bal.retirer();
+                if (lettre.equals("Q")){
+                    this.interrupt();
+                }
                 Thread.sleep(200);
             }
         } catch (Exception e) {
         }
     }
 }
+
+
